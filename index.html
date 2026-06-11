@@ -1,0 +1,992 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shamuvel Jog | Streamlining Compliance, Careers & Travel</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts - Plus Jakarta Sans & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #030712;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .glow-accent {
+            box-shadow: 0 0 40px -5px rgba(20, 184, 166, 0.2);
+        }
+        .glow-button {
+            box-shadow: 0 0 20px 0px rgba(99, 102, 241, 0.4);
+        }
+        .glassmorphism {
+            background: rgba(17, 24, 39, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        /* Custom scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #030712;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1f2937;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #374151;
+        }
+    </style>
+</head>
+<body class="text-slate-100 overflow-x-hidden">
+
+    <!-- Navigation Header -->
+    <header class="fixed top-0 left-0 w-full z-50 glassmorphism transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-cyan-500 via-indigo-500 to-purple-600 flex items-center justify-center glow-accent transition-transform duration-300 group-hover:scale-105">
+                    <span class="text-white font-extrabold text-lg tracking-wider">SJ</span>
+                </div>
+                <div>
+                    <span class="font-heading font-extrabold text-lg bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400">SHAMUVEL JOG</span>
+                    <span class="block text-xs text-cyan-400 font-medium tracking-widest uppercase">Digital Specialist</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Menu -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">About</a>
+                <a href="#services" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Services</a>
+                <a href="#checklist-tool" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Prep Tool</a>
+                <a href="#contact" class="text-sm font-medium text-slate-300 hover:text-cyan-400 transition-colors">Contact</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold text-sm hover:opacity-95 transition-opacity glow-button">
+                    Book Consultation
+                </a>
+            </nav>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="mobileMenuBtn" class="md:hidden text-slate-300 hover:text-white focus:outline-none" aria-label="Toggle menu">
+                <i data-lucide="menu" class="w-6 h-6"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobileMenu" class="hidden md:hidden glassmorphism border-t border-slate-800 absolute top-20 left-0 w-full px-6 py-6 flex flex-col space-y-4 animate-fadeIn">
+            <a href="#about" class="text-slate-300 hover:text-cyan-400 py-2 transition-colors" onclick="toggleMobileMenu()">About</a>
+            <a href="#services" class="text-slate-300 hover:text-cyan-400 py-2 transition-colors" onclick="toggleMobileMenu()">Services</a>
+            <a href="#checklist-tool" class="text-slate-300 hover:text-cyan-400 py-2 transition-colors" onclick="toggleMobileMenu()">Prep Tool</a>
+            <a href="#contact" class="text-slate-300 hover:text-cyan-400 py-2 transition-colors" onclick="toggleMobileMenu()">Contact</a>
+            <a href="#contact" class="px-5 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-semibold text-center text-sm glow-button" onclick="toggleMobileMenu()">
+                Book Consultation
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero / Intro Section -->
+    <section class="relative pt-32 pb-24 md:pt-48 md:pb-36 overflow-hidden">
+        <!-- Background Glowing Orbs & Tech Grids -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(99,102,241,0.08),transparent_45%)]"></div>
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_70%_80%,rgba(20,184,166,0.08),transparent_45%)]"></div>
+        <div class="absolute top-20 left-1/2 -translate-x-1/2 w-[800px] h-[300px] bg-indigo-500/5 blur-[120px] rounded-full"></div>
+        <div class="absolute top-0 left-0 right-0 h-[1px] bg-gradient-to-r from-transparent via-slate-800 to-transparent"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Text Block -->
+                <div class="lg:col-span-7 text-center lg:text-left space-y-6">
+                    <div class="inline-flex items-center space-x-2 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-full text-xs font-semibold text-cyan-400 uppercase tracking-widest">
+                        <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                        <span>Your Dedicated Digital Creator & Consultant</span>
+                    </div>
+                    
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Streamlining <br class="hidden sm:inline">
+                        <span class="bg-clip-text text-transparent bg-gradient-to-r from-cyan-400 via-indigo-400 to-purple-500">
+                            Compliance, Careers, & Travel
+                        </span>
+                    </h1>
+                    
+                    <p class="text-slate-400 text-lg sm:text-xl max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Say goodbye to complex bureaucratic bottlenecks. I design digital-first administrative solutions to simplify registrations, admissions, bookkeeping, and global travel documentation.
+                    </p>
+
+                    <!-- Interactive CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#checklist-tool" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-indigo-600 via-indigo-700 to-cyan-500 hover:opacity-95 text-white font-bold text-base transition-all transform hover:-translate-y-0.5 shadow-lg glow-button flex items-center justify-center space-x-2">
+                            <span>Get Started Instantly</span>
+                            <i data-lucide="arrow-right" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#services" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-slate-900 hover:bg-slate-850 text-slate-300 hover:text-white font-semibold text-base border border-slate-800 hover:border-slate-700 transition-all flex items-center justify-center space-x-2">
+                            <span>Explore 7 Key Services</span>
+                        </a>
+                    </div>
+
+                    <!-- Client Trust & Stats Grid -->
+                    <div class="grid grid-cols-3 gap-6 pt-10 border-t border-slate-900 max-w-md mx-auto lg:mx-0">
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-white">100%</span>
+                            <span class="block text-xs sm:text-sm text-slate-400">Digital Filing</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-white">3+</span>
+                            <span class="block text-xs sm:text-sm text-slate-400">Industry Niches</span>
+                        </div>
+                        <div>
+                            <span class="block text-2xl sm:text-3xl font-extrabold text-white">24/7</span>
+                            <span class="block text-xs sm:text-sm text-slate-400">Expert Support</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Hero Interactive Visual Dashboard -->
+                <div class="lg:col-span-5 relative mt-8 lg:mt-0">
+                    <div class="relative mx-auto max-w-[420px] lg:max-w-none">
+                        <!-- Neon Glow Ring Backdrops -->
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-600 rounded-2xl blur opacity-30 group-hover:opacity-100 transition duration-1000 group-hover:duration-200 animate-tilt"></div>
+                        
+                        <!-- Interactive Dashboard Mockup -->
+                        <div class="relative glassmorphism rounded-2xl p-6 border border-slate-800/80 shadow-2xl space-y-6">
+                            <div class="flex items-center justify-between border-b border-slate-800 pb-4">
+                                <div class="flex space-x-2">
+                                    <div class="w-3 h-3 rounded-full bg-red-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-yellow-500/80"></div>
+                                    <div class="w-3 h-3 rounded-full bg-green-500/80"></div>
+                                </div>
+                                <span class="text-xs font-semibold text-slate-500 tracking-wider">SECURE DIGITAL DESK</span>
+                            </div>
+
+                            <!-- Live Action Simulator Card inside Hero -->
+                            <div class="space-y-4">
+                                <div class="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="p-2.5 rounded-lg bg-emerald-500/10 text-emerald-400">
+                                            <i data-lucide="activity" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <span class="block text-sm font-semibold text-slate-200">Healthcare Compliance</span>
+                                            <span class="text-xs text-slate-400">PCPNDT / Hospital Registration</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Active Assistance</span>
+                                </div>
+
+                                <div class="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="p-2.5 rounded-lg bg-sky-500/10 text-sky-400">
+                                            <i data-lucide="plane" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <span class="block text-sm font-semibold text-slate-200">Global Travel Desks</span>
+                                            <span class="text-xs text-slate-400">Passport Checkpoints & Itineraries</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-sky-500/10 text-sky-400 border border-sky-500/20">Active Planning</span>
+                                </div>
+
+                                <div class="bg-slate-950/60 border border-slate-800/60 rounded-xl p-4 flex items-center justify-between">
+                                    <div class="flex items-center space-x-3">
+                                        <div class="p-2.5 rounded-lg bg-indigo-500/10 text-indigo-400">
+                                            <i data-lucide="book-open" class="w-5 h-5"></i>
+                                        </div>
+                                        <div>
+                                            <span class="block text-sm font-semibold text-slate-200">Academic & Bookkeeping</span>
+                                            <span class="text-xs text-slate-400">Institutional Admissions / Finance</span>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs px-2.5 py-1 rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">Active Management</span>
+                                </div>
+                            </div>
+
+                            <div class="text-center pt-2">
+                                <span class="inline-block text-xs font-medium text-slate-400">
+                                    Trusted by Doctors, Students & Businesses
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-24 relative bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+                <span class="text-sm font-bold tracking-widest text-cyan-400 uppercase">Interactive Service Matrix</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight">Structured Professional Services</h2>
+                <p class="text-slate-400 text-base sm:text-lg">
+                    We've grouped our 7 digital solutions into 3 logical directories to help you instantly identify your exact administrative requirement.
+                </p>
+            </div>
+
+            <!-- Categories and Service Grid Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Category 1: Medical & Healthcare Compliance -->
+                <div class="glassmorphism rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition-all hover:scale-[1.01] flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-teal-500/10 text-teal-400 flex items-center justify-center mb-6">
+                            <i data-lucide="heart-pulse" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Medical & Compliance</h3>
+                        <p class="text-slate-400 text-sm mb-6">Expert guidance to establish regulatory clearance and navigate crucial licensing for medical facilities and practitioners.</p>
+                        
+                        <div class="space-y-4 border-t border-slate-850 pt-4">
+                            <!-- Service 1 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-cyan-400 transition-colors">Hospital Registration</span>
+                                <span class="block text-xs text-slate-400">Establishment acts compliance, certifications & approvals.</span>
+                            </div>
+                            <!-- Service 2 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-cyan-400 transition-colors">PCPNDT Registration</span>
+                                <span class="block text-xs text-slate-400">Strict regulatory documentation for diagnostic centers.</span>
+                            </div>
+                            <!-- Service 3 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-cyan-400 transition-colors">Nursing Council Registration</span>
+                                <span class="block text-xs text-slate-400">Professional credentials licensing support & renewals.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-4 border-t border-slate-900">
+                        <span class="text-xs font-semibold text-teal-400 tracking-wider block mb-3 uppercase">Audience: Doctors, Clinic & Hospital Owners</span>
+                        <a href="#checklist-tool" onclick="selectNiche('medical')" class="w-full py-3 rounded-xl bg-teal-500/10 hover:bg-teal-500/20 text-teal-300 font-bold text-xs uppercase tracking-wider transition-colors inline-block text-center">
+                            Run Medical Checklist
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category 2: Travel & Documentation -->
+                <div class="glassmorphism rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition-all hover:scale-[1.01] flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-6">
+                            <i data-lucide="plane-takeoff" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Travel & Documents</h3>
+                        <p class="text-slate-400 text-sm mb-6">Simplifying complex visa, passport, and logistics setups to ensure comfortable professional or academic travel.</p>
+                        
+                        <div class="space-y-4 border-t border-slate-850 pt-4">
+                            <!-- Service 4 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-indigo-400 transition-colors">Passport Assistance</span>
+                                <span class="block text-xs text-slate-400">Fresh applications, quick renewals, and Tatkaal assistance.</span>
+                            </div>
+                            <!-- Service 5 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-indigo-400 transition-colors">Travel Desk (Itineraries & Booking)</span>
+                                <span class="block text-xs text-slate-400">Personalized flight schedules, accommodations, & tourist planning.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-4 border-t border-slate-900">
+                        <span class="text-xs font-semibold text-indigo-400 tracking-wider block mb-3 uppercase">Audience: Students, Executives & Tourists</span>
+                        <a href="#checklist-tool" onclick="selectNiche('travel')" class="w-full py-3 rounded-xl bg-indigo-500/10 hover:bg-indigo-500/20 text-indigo-300 font-bold text-xs uppercase tracking-wider transition-colors inline-block text-center">
+                            Run Travel Checklist
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Category 3: Academic & Business Solutions -->
+                <div class="glassmorphism rounded-2xl p-6 border border-slate-800 hover:border-slate-700 transition-all hover:scale-[1.01] flex flex-col justify-between">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-purple-500/10 text-purple-400 flex items-center justify-center mb-6">
+                            <i data-lucide="briefcase" class="w-6 h-6"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-white mb-2">Academic & Business</h3>
+                        <p class="text-slate-400 text-sm mb-6">Helping businesses keep accurate accounts while empowering students to gain secure admissions into premium institutes.</p>
+                        
+                        <div class="space-y-4 border-t border-slate-850 pt-4">
+                            <!-- Service 6 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-purple-400 transition-colors">Institutional Admissions</span>
+                                <span class="block text-xs text-slate-400">Admissions counseling, documents clearing, and enrollment.</span>
+                            </div>
+                            <!-- Service 7 -->
+                            <div class="group/srv">
+                                <span class="block text-sm font-semibold text-slate-200 group-hover/srv:text-purple-400 transition-colors">Professional Bookkeeping</span>
+                                <span class="block text-xs text-slate-400">Organized transaction records, ledgers, & clean reports.</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8 pt-4 border-t border-slate-900">
+                        <span class="text-xs font-semibold text-purple-400 tracking-wider block mb-3 uppercase">Audience: Students & Growing Enterprise Owners</span>
+                        <a href="#checklist-tool" onclick="selectNiche('academic')" class="w-full py-3 rounded-xl bg-purple-500/10 hover:bg-purple-500/20 text-purple-300 font-bold text-xs uppercase tracking-wider transition-colors inline-block text-center">
+                            Run Academic/Business Checklist
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Interactive Diagnostic / Requirements Checker Section -->
+    <section id="checklist-tool" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(99,102,241,0.05),transparent_60%)]"></div>
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            
+            <div class="text-center max-w-2xl mx-auto mb-12 space-y-4">
+                <span class="text-sm font-bold tracking-widest text-indigo-400 uppercase">Interactive Service Blueprint</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-white">Document Prep Assistant</h2>
+                <p class="text-slate-400 text-sm sm:text-base">
+                    Select a service below to instantly check what primary items or documents you need. Cross them off as you prepare, and dispatch the package to me for professional filing.
+                </p>
+            </div>
+
+            <!-- Dynamic Tool Container -->
+            <div class="glassmorphism rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-2xl space-y-8">
+                
+                <!-- Service Selection Hub -->
+                <div class="space-y-3">
+                    <label class="block text-sm font-semibold text-slate-300">Choose the Service you need:</label>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+                        <button onclick="loadChecklist('hospital')" id="btn-hospital" class="checklist-tab-btn py-3 px-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950/40 text-left text-sm font-medium transition-all duration-200 hover:scale-[1.01] flex items-center justify-between">
+                            <span>Hospital Reg.</span>
+                            <i data-lucide="plus" class="w-4 h-4 text-cyan-400"></i>
+                        </button>
+                        <button onclick="loadChecklist('pcpndt')" id="btn-pcpndt" class="checklist-tab-btn py-3 px-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950/40 text-left text-sm font-medium transition-all duration-200 hover:scale-[1.01] flex items-center justify-between">
+                            <span>PCPNDT Reg.</span>
+                            <i data-lucide="plus" class="w-4 h-4 text-cyan-400"></i>
+                        </button>
+                        <button onclick="loadChecklist('nursing')" id="btn-nursing" class="checklist-tab-btn py-3 px-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950/40 text-left text-sm font-medium transition-all duration-200 hover:scale-[1.01] flex items-center justify-between">
+                            <span>Nursing Council</span>
+                            <i data-lucide="plus" class="w-4 h-4 text-teal-400"></i>
+                        </button>
+                        <button onclick="loadChecklist('passport')" id="btn-passport" class="checklist-tab-btn py-3 px-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950/40 text-left text-sm font-medium transition-all duration-200 hover:scale-[1.01] flex items-center justify-between">
+                            <span>Passport Filing</span>
+                            <i data-lucide="plus" class="w-4 h-4 text-indigo-400"></i>
+                        </button>
+                        <button onclick="loadChecklist('travel')" id="btn-travel" class="checklist-tab-btn py-3 px-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950/40 text-left text-sm font-medium transition-all duration-200 hover:scale-[1.01] flex items-center justify-between">
+                            <span>Travel & Itinerary</span>
+                            <i data-lucide="plus" class="w-4 h-4 text-indigo-400"></i>
+                        </button>
+                        <button onclick="loadChecklist('admissions')" id="btn-admissions" class="checklist-tab-btn py-3 px-4 rounded-xl border border-slate-800 hover:border-slate-700 bg-slate-950/40 text-left text-sm font-medium transition-all duration-200 hover:scale-[1.01] flex items-center justify-between">
+                            <span>Admissions Desk</span>
+                            <i data-lucide="plus" class="w-4 h-4 text-purple-400"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Live Checklist Section (Initially Loaded dynamically via Javascript) -->
+                <div id="checklist-interactive-card" class="bg-slate-950/60 border border-slate-850 rounded-xl p-5 sm:p-6 space-y-6">
+                    <!-- Title/Header in Card -->
+                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-850 pb-4">
+                        <div>
+                            <span class="text-xs font-bold text-cyan-400 uppercase tracking-widest block mb-1">Requirement Checklists</span>
+                            <h3 id="checklist-title" class="text-lg font-bold text-white">Select a service above to get started</h3>
+                        </div>
+                        <!-- Progress tracker -->
+                        <div class="flex items-center space-x-3 bg-slate-900 border border-slate-800 px-4 py-2 rounded-xl">
+                            <span class="text-xs text-slate-400 font-medium">Ready:</span>
+                            <span id="checklist-progress" class="text-sm font-extrabold text-white">0 / 0</span>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Checkbox List -->
+                    <div id="checklist-items-container" class="space-y-3">
+                        <p class="text-sm text-slate-400 italic">Please select one of the core services above to view the custom checklist details.</p>
+                    </div>
+
+                    <!-- Progress Bar -->
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-xs text-slate-400">
+                            <span>Progress Readiness</span>
+                            <span id="bar-percentage">0%</span>
+                        </div>
+                        <div class="w-full h-2.5 bg-slate-900 rounded-full overflow-hidden">
+                            <div id="bar-fill" class="h-full bg-gradient-to-r from-cyan-500 to-indigo-600 w-0 transition-all duration-500"></div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom Actions to dispatch info -->
+                    <div class="flex flex-col sm:flex-row justify-between items-center gap-4 pt-2">
+                        <span class="text-xs text-slate-400 text-center sm:text-left">
+                            Checking items aggregates your package preparation status for the booking.
+                        </span>
+                        <button onclick="exportCheckedStatus()" class="w-full sm:w-auto px-6 py-3 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 hover:text-white text-slate-300 font-bold text-xs uppercase tracking-wider transition-all flex items-center justify-center space-x-2">
+                            <span>Apply Prep Status</span>
+                            <i data-lucide="check-square" class="w-4 h-4"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-24 relative bg-slate-950/40">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center animate-fadeIn">
+                
+                <!-- Left Graphics/Representation -->
+                <div class="lg:col-span-5 relative order-2 lg:order-1">
+                    <div class="relative mx-auto max-w-sm lg:max-w-none">
+                        <div class="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-indigo-500 rounded-2xl blur opacity-20"></div>
+                        <div class="relative glassmorphism rounded-2xl p-6 border border-slate-800/80 shadow-xl space-y-6">
+                            <!-- Visual Badge representing Shamuvel's core approach -->
+                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-tr from-cyan-400 to-indigo-500 flex items-center justify-center text-white font-black text-2xl shadow-lg shadow-cyan-500/10">
+                                SJ
+                            </div>
+                            <div class="space-y-4">
+                                <h4 class="text-lg font-bold text-white">Core Principle</h4>
+                                <blockquote class="text-slate-300 italic text-sm border-l-2 border-cyan-400 pl-4">
+                                    "I combine administrative efficiency with modern communication tools, offering stress-free digital management so that my clients can focus entirely on their professional practice or upcoming travels."
+                                </blockquote>
+                                <div class="flex items-center space-x-3 pt-2">
+                                    <div class="w-1.5 h-1.5 rounded-full bg-cyan-400 animate-pulse"></div>
+                                    <span class="text-xs text-slate-400">Digital Creator Approach</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Side Bio Content -->
+                <div class="lg:col-span-7 space-y-6 order-1 lg:order-2">
+                    <div class="inline-flex items-center space-x-2 bg-slate-900/80 border border-slate-800 px-4 py-2 rounded-full text-xs font-semibold text-cyan-400 uppercase tracking-widest">
+                        <span>THE CREATOR BEHIND THE BRAND</span>
+                    </div>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-snug">
+                        About Shamuvel Jog
+                    </h2>
+                    <p class="text-slate-300 text-base sm:text-lg leading-relaxed">
+                        As a professional digital specialist, content strategist, and documentation expert, I assist individuals and business owners through the heavy paperwork pipelines that restrict real growth.
+                    </p>
+                    <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                        Whether you are a medical doctor securing critical establishment compliance, an aspiring student traveling across international lines, or an entrepreneur streamlining organizational cash ledger files, I build dedicated, tech-driven execution tracks. I utilize modern booking matrices, instant communication updates, and structured secure systems.
+                    </p>
+
+                    <!-- Feature checkmarks -->
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4 text-slate-300">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 rounded bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-sm">Structured Compliance Checkpoints</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 rounded bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-sm">Secure Documentation Processing</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 rounded bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-sm">Pre-Packaged Document Toolkits</span>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-5 h-5 rounded bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                            </div>
+                            <span class="text-sm">Direct Online Status Updates</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact and Consultation Form Section -->
+    <section id="contact" class="py-24 relative overflow-hidden">
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_20%_80%,rgba(99,102,241,0.06),transparent_50%)]"></div>
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-stretch">
+                
+                <!-- Left Segment: Consultation Pitch -->
+                <div class="lg:col-span-5 flex flex-col justify-between space-y-8">
+                    <div class="space-y-4">
+                        <span class="text-sm font-bold tracking-widest text-cyan-400 uppercase">Consultation Desk</span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-white leading-tight">Start Your Hassle-Free Journey Today</h2>
+                        <p class="text-slate-400 text-sm sm:text-base leading-relaxed">
+                            Have questions regarding Medical Licensing, Passport tatkaal procedures, or monthly ledger accounts? Drop your details in the interactive scheduler. 
+                        </p>
+                    </div>
+
+                    <!-- Direct Connect Badges -->
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-850 flex items-center space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center">
+                                <i data-lucide="mail" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-slate-400">Direct Consultation Email</span>
+                                <span class="text-sm font-semibold text-slate-200">shamuveljog@gmail.com</span>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-900/60 border border-slate-850 flex items-center space-x-4">
+                            <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center">
+                                <i data-lucide="phone-call" class="w-5 h-5"></i>
+                            </div>
+                            <div>
+                                <span class="block text-xs text-slate-400">Immediate Messaging</span>
+                                <span class="text-sm font-semibold text-slate-200">WhatsApp Dispatch Widget</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="text-xs text-slate-500">
+                        * All sensitive documents shared are processed over secure channels and returned instantly after verification checkmarks are finalized.
+                    </div>
+                </div>
+
+                <!-- Right Segment: Contact / Quote Form Desk -->
+                <div class="lg:col-span-7">
+                    <div class="glassmorphism rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-2xl relative">
+                        
+                        <h3 class="text-xl font-bold text-white mb-6">Inquiry & Document Booking Form</h3>
+                        
+                        <!-- Main Interactive Form -->
+                        <form id="consultationForm" onsubmit="handleFormSubmission(event)" class="space-y-5">
+                            
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Name Input -->
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Your Full Name *</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                                </div>
+                                <!-- Phone/WhatsApp Input -->
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">WhatsApp Number *</label>
+                                    <input type="tel" id="form-phone" required placeholder="+91 98765 43210" class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors">
+                                </div>
+                            </div>
+
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <!-- Service Select -->
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Requested Service *</label>
+                                    <select id="form-service" required class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-slate-300 focus:outline-none focus:border-cyan-400 transition-colors">
+                                        <option value="" disabled selected>-- Select Service --</option>
+                                        <option value="Hospital Registration">🩺 Hospital Registration</option>
+                                        <option value="PCPNDT Registration">🩺 PCPNDT Registration</option>
+                                        <option value="Nursing Council Registration">🩺 Nursing Registration</option>
+                                        <option value="Passport Assistance">✈️ Passport Assistance</option>
+                                        <option value="Travel Desk & Booking">✈️ Travel Desk Planning</option>
+                                        <option value="Institutional Admissions">📊 Admissions Assistance</option>
+                                        <option value="Professional Bookkeeping">📊 Accounting Ledger</option>
+                                    </select>
+                                </div>
+                                <!-- Prep Status Text from Interactive Tool -->
+                                <div class="space-y-2">
+                                    <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Prep Tool Status</label>
+                                    <input type="text" id="form-prep-status" readonly placeholder="Run checker tool above to link progress" class="w-full bg-slate-900 border border-slate-800 rounded-xl px-4 py-3 text-xs text-slate-400 focus:outline-none">
+                                </div>
+                            </div>
+
+                            <!-- message description -->
+                            <div class="space-y-2">
+                                <label class="block text-xs font-semibold text-slate-300 uppercase tracking-wider">Describe your requirement / timeline</label>
+                                <textarea id="form-message" rows="4" placeholder="Mention registration details, travel plans, or custom bookkeeping scope..." class="w-full bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-3 text-sm text-white focus:outline-none focus:border-cyan-400 transition-colors"></textarea>
+                            </div>
+
+                            <!-- Interactive dispatch control buttons -->
+                            <div class="flex flex-col sm:flex-row items-stretch sm:items-center justify-end gap-3 pt-3">
+                                <button type="button" onclick="generateWhatsAppMessage()" class="px-5 py-3 rounded-xl bg-emerald-600/10 border border-emerald-500/20 hover:bg-emerald-600/20 text-emerald-400 text-xs font-bold uppercase tracking-wider transition-all flex items-center justify-center space-x-2">
+                                    <i data-lucide="send" class="w-4 h-4"></i>
+                                    <span>Export to WhatsApp</span>
+                                </button>
+                                <button type="submit" class="px-8 py-3 rounded-xl bg-gradient-to-r from-indigo-600 to-cyan-500 text-white font-bold text-xs uppercase tracking-wider hover:opacity-95 transition-all shadow-md glow-button flex items-center justify-center space-x-2">
+                                    <span>Submit Consultation Request</span>
+                                </button>
+                            </div>
+
+                        </form>
+
+                        <!-- Toast success box inside the Form container, dynamically toggled -->
+                        <div id="form-toast" class="hidden absolute inset-0 glassmorphism rounded-2xl flex flex-col items-center justify-center text-center p-6 space-y-4">
+                            <div class="w-16 h-16 rounded-full bg-cyan-500/10 text-cyan-400 flex items-center justify-center">
+                                <i data-lucide="check-circle" class="w-8 h-8"></i>
+                            </div>
+                            <h4 class="text-xl font-bold text-white">Inquiry Successfully Ready!</h4>
+                            <p class="text-sm text-slate-300 max-w-sm">
+                                Your inquiry package has been structured. We've copied the summary to your clipboard for easy sharing. Use the direct WhatsApp widget below to launch a chat instantly.
+                            </p>
+                            <button onclick="dismissFormToast()" class="px-6 py-2 rounded-xl bg-slate-900 border border-slate-800 hover:border-slate-700 text-xs text-slate-400 hover:text-white uppercase tracking-widest font-bold transition-colors">
+                                Reset Form
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="bg-slate-950 border-t border-slate-900 py-12 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row justify-between items-center gap-6">
+            
+            <!-- Logo area -->
+            <div class="flex items-center space-x-3">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-tr from-cyan-500 to-indigo-600 flex items-center justify-center text-white font-bold text-xs">
+                    SJ
+                </div>
+                <div class="text-left">
+                    <span class="block text-sm font-bold tracking-wider text-slate-200">SHAMUVEL JOG</span>
+                    <span class="block text-[10px] text-slate-500 uppercase tracking-widest">Digital Solutions Desk</span>
+                </div>
+            </div>
+
+            <!-- Copyright information -->
+            <div class="text-center sm:text-right text-xs text-slate-500 space-y-1">
+                <p>&copy; 2026 Shamuvel Jog. All Rights Reserved.</p>
+                <p>Designed for Digital Compliance, Career Admissions, & International Desk planning.</p>
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Interactive Floating WhatsApp Widget -->
+    <div id="whatsapp-widget" class="fixed bottom-6 right-6 z-50 flex flex-col items-end">
+        
+        <!-- Interactive Chat Window Popover -->
+        <div id="whatsapp-chatbox" class="hidden w-[320px] rounded-2xl bg-slate-900 border border-slate-800 shadow-2xl overflow-hidden mb-4 animate-scaleUp">
+            <!-- Chatbox Header -->
+            <div class="bg-gradient-to-r from-emerald-600 to-emerald-500 p-4 flex items-center justify-between">
+                <div class="flex items-center space-x-3">
+                    <div class="relative">
+                        <div class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-white font-bold text-sm">
+                            SJ
+                        </div>
+                        <span class="absolute bottom-0 right-0 w-2.5 h-2.5 rounded-full bg-green-400 border border-slate-900"></span>
+                    </div>
+                    <div>
+                        <span class="block text-sm font-bold text-white">Shamuvel Jog</span>
+                        <span class="block text-[10px] text-emerald-100 font-medium">Online Compliance Consultant</span>
+                    </div>
+                </div>
+                <button onclick="toggleWhatsAppChatbox()" class="text-emerald-100 hover:text-white">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+            </div>
+
+            <!-- Chatbox Messages Display -->
+            <div class="p-4 bg-slate-950/80 space-y-3 min-h-[160px] max-h-[220px] overflow-y-auto">
+                <div class="bg-slate-900 border border-slate-800 p-3 rounded-2xl rounded-tl-none max-w-[85%] text-xs text-slate-300">
+                    <p class="leading-relaxed">Hi there! 👋 Glad to see you here.</p>
+                </div>
+                <div class="bg-slate-900 border border-slate-800 p-3 rounded-2xl rounded-tl-none max-w-[85%] text-xs text-slate-300">
+                    <p class="leading-relaxed">What kind of administrative paperwork can I streamline for you today?</p>
+                </div>
+            </div>
+
+            <!-- Chatbox CTA trigger -->
+            <div class="p-3 bg-slate-900/60 border-t border-slate-800 flex items-center">
+                <a href="https://wa.me/919999999999" target="_blank" onclick="trackChatStart()" class="w-full py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-600 text-white font-bold text-xs uppercase tracking-wider text-center transition-colors shadow-lg block">
+                    Start Secure Chat
+                </a>
+            </div>
+        </div>
+
+        <!-- Floating Action Button -->
+        <button onclick="toggleWhatsAppChatbox()" class="w-14 h-14 rounded-full bg-gradient-to-tr from-emerald-500 to-emerald-600 hover:scale-105 transition-all flex items-center justify-center text-white shadow-xl hover:shadow-emerald-500/20 glow-button" aria-label="WhatsApp Desk">
+            <i data-lucide="message-circle" class="w-6 h-6"></i>
+        </button>
+    </div>
+
+    <!-- Interactive Logic Execution Engine -->
+    <script>
+        // Initiate Lucide Icons on load
+        window.addEventListener('load', () => {
+            lucide.createIcons();
+            // Load default compliance checklist
+            loadChecklist('hospital');
+        });
+
+        // Mobile drawer panel toggle
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobileMenu');
+            menu.classList.toggle('hidden');
+        }
+
+        const menuBtn = document.getElementById('mobileMenuBtn');
+        if (menuBtn) {
+            menuBtn.addEventListener('click', toggleMobileMenu);
+        }
+
+        // Checklist Repository Database
+        const checklistRepo = {
+            hospital: {
+                title: "🩺 Hospital Registration Compliance Checklist",
+                category: "Hospital Registration",
+                items: [
+                    "Clinical Establishments Registration Certificate (Form 1)",
+                    "Local Fire Department NOC / Clearance Certificate",
+                    "State Pollution Control Board NOC (Consent to Operate)",
+                    "List of Medical Equipment & Certified Practitioner Profiles",
+                    "Building safety certificate from local municipal engineer",
+                    "Disposed Waste Management service agreements"
+                ]
+            },
+            pcpndt: {
+                title: "🩺 PCPNDT Ultrasound License Checklist",
+                category: "PCPNDT Registration",
+                items: [
+                    "Form A (Detailed Medical Center Application form)",
+                    "Attested copies of Ultrasound Equipment invoices & safety certifications",
+                    "Signed declaration form acknowledging non-determination of fetal gender",
+                    "Affidavits from Registered Radiologist & Gynecologist practitioners",
+                    "Map/Layout details of the designated ultrasound examination cabins",
+                    "Attested Registration certificates of operating ultrasound specialists"
+                ]
+            },
+            nursing: {
+                title: "🩺 Nursing Council Board Licensure Checklist",
+                category: "Nursing Council Registration",
+                items: [
+                    "Consolidated Professional Nursing Degree/Diploma Certificate",
+                    "Official transcript certificates from accredited academy",
+                    "Valid government Identity (Aadhaar, Passport or PAN card)",
+                    "Clinical competency experience validation forms",
+                    "State Nursing Council original registration certificate (for renewals)",
+                    "Passport-size recent photographs & character endorsement forms"
+                ]
+            },
+            passport: {
+                title: "✈️ Passport Renewal & Tatkaal Preparation",
+                category: "Passport Assistance",
+                items: [
+                    "Valid Proof of Birth (Birth Certificate or High School Leaving Certificate)",
+                    "Valid Proof of Current Address (Electricity bill, bank statement, rent deed)",
+                    "Previous Passport book (for renewals/re-issues)",
+                    "Annexure declarations (for Tatkaal emergency applications)",
+                    "Parental authorization certificates (if processing minor passports)",
+                    "Verification Certificate signed by authorized government officials"
+                ]
+            },
+            travel: {
+                title: "✈️ Custom Travel Planning Desk Blueprint",
+                category: "Travel Desk & Booking",
+                items: [
+                    "Secure Visa requirement checklist relative to destination country",
+                    "Planned Round-trip Flight itinerary layout options",
+                    "Affordable lodging reservations / invitation letter structures",
+                    "Sufficient Travel health insurance certifications",
+                    "Active immunization status (Yellow fever, COVID certifications if needed)",
+                    "International Driving Permit checklist (Optional addition)"
+                ]
+            },
+            admissions: {
+                title: "📊 Premium Academic Enrollment Prep List",
+                category: "Institutional Admissions",
+                items: [
+                    "Complete High School transcripts and board scorecard originals",
+                    "Certified Statement of Purpose (SOP) explaining career roadmap",
+                    "Formal Letters of Recommendation (LORs) from teachers or supervisors",
+                    "Standardized Admission Entrance scores transcripts (if applicable)",
+                    "Duly completed institutional Application Intake Form draft",
+                    "Financial sponsorship support declarations or bank letters"
+                ]
+            }
+        };
+
+        let currentActiveServiceKey = 'hospital';
+        let checkedItemsRegistry = {};
+
+        // Function to select niche from categories card triggers and scroll down
+        function selectNiche(category) {
+            let key = 'hospital';
+            if (category === 'travel') key = 'passport';
+            if (category === 'academic') key = 'admissions';
+            
+            loadChecklist(key);
+            
+            // Sync form dropdown
+            const serviceSelect = document.getElementById('form-service');
+            if (serviceSelect) {
+                if (key === 'hospital') serviceSelect.value = 'Hospital Registration';
+                if (key === 'passport') serviceSelect.value = 'Passport Assistance';
+                if (key === 'admissions') serviceSelect.value = 'Institutional Admissions';
+            }
+        }
+
+        // Load checklists dynamically into the interactive assessment panel
+        function loadChecklist(serviceKey) {
+            currentActiveServiceKey = serviceKey;
+            const data = checklistRepo[serviceKey];
+            if (!data) return;
+
+            // Highlight chosen tab/button styling
+            document.querySelectorAll('.checklist-tab-btn').forEach(btn => {
+                btn.classList.remove('border-cyan-500', 'bg-cyan-500/10', 'text-cyan-400');
+                btn.classList.add('border-slate-800', 'bg-slate-950/40', 'text-slate-300');
+            });
+
+            const activeBtn = document.getElementById(`btn-${serviceKey}`);
+            if (activeBtn) {
+                activeBtn.classList.remove('border-slate-800', 'bg-slate-950/40', 'text-slate-300');
+                activeBtn.classList.add('border-cyan-500', 'bg-cyan-500/10', 'text-cyan-400');
+            }
+
+            // Update title
+            document.getElementById('checklist-title').innerText = data.title;
+
+            // Render interactive checkboxes
+            const container = document.getElementById('checklist-items-container');
+            container.innerHTML = '';
+
+            // Init key in registry if empty
+            if (!checkedItemsRegistry[serviceKey]) {
+                checkedItemsRegistry[serviceKey] = Array(data.items.length).fill(false);
+            }
+
+            data.items.forEach((item, index) => {
+                const isChecked = checkedItemsRegistry[serviceKey][index];
+                const div = document.createElement('div');
+                div.className = "flex items-start space-x-3 p-3 rounded-lg bg-slate-900/40 border border-slate-850 hover:border-slate-800 transition-colors";
+                div.innerHTML = `
+                    <input type="checkbox" id="chk-${serviceKey}-${index}" ${isChecked ? 'checked' : ''} onchange="toggleItemCheck('${serviceKey}', ${index})" class="mt-1 h-4.5 w-4.5 rounded text-cyan-500 focus:ring-cyan-500 border-slate-700 bg-slate-950 focus:ring-offset-0 cursor-pointer">
+                    <label for="chk-${serviceKey}-${index}" class="text-xs sm:text-sm text-slate-300 cursor-pointer select-none leading-normal ${isChecked ? 'line-through text-slate-500' : ''}">${item}</label>
+                `;
+                container.appendChild(div);
+            });
+
+            updateProgress(serviceKey);
+        }
+
+        // Toggle checkbox trigger
+        function toggleItemCheck(serviceKey, index) {
+            const chk = document.getElementById(`chk-${serviceKey}-${index}`);
+            if (!chk) return;
+
+            checkedItemsRegistry[serviceKey][index] = chk.checked;
+            
+            // Toggle strike-through text visual
+            const label = chk.nextElementSibling;
+            if (chk.checked) {
+                label.classList.add('line-through', 'text-slate-500');
+            } else {
+                label.classList.remove('line-through', 'text-slate-500');
+            }
+
+            updateProgress(serviceKey);
+        }
+
+        // Calculate and update progress indicators
+        function updateProgress(serviceKey) {
+            const registry = checkedItemsRegistry[serviceKey];
+            if (!registry) return;
+
+            const total = registry.length;
+            const checkedCount = registry.filter(val => val === true).length;
+            const percentage = Math.round((checkedCount / total) * 100);
+
+            document.getElementById('checklist-progress').innerText = `${checkedCount} / ${total}`;
+            document.getElementById('bar-percentage').innerText = `${percentage}%`;
+            document.getElementById('bar-fill').style.width = `${percentage}%`;
+        }
+
+        // Apply interactive prep status values directly to the Form desk
+        function exportCheckedStatus() {
+            const data = checklistRepo[currentActiveServiceKey];
+            const registry = checkedItemsRegistry[currentActiveServiceKey];
+            if (!data || !registry) return;
+
+            const total = registry.length;
+            const ready = registry.filter(val => val === true).length;
+
+            const statusInput = document.getElementById('form-prep-status');
+            if (statusInput) {
+                statusInput.value = `${data.category}: (${ready}/${total} Prepared)`;
+            }
+
+            // Sync form dropdown
+            const serviceSelect = document.getElementById('form-service');
+            if (serviceSelect) {
+                const optToSelect = Array.from(serviceSelect.options).find(opt => opt.value.includes(data.category));
+                if (optToSelect) {
+                    serviceSelect.value = optToSelect.value;
+                }
+            }
+
+            // Smooth scroll user to the inquiry form segment
+            document.getElementById('contact').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Floating WhatsApp widget toggles
+        function toggleWhatsAppChatbox() {
+            const box = document.getElementById('whatsapp-chatbox');
+            box.classList.toggle('hidden');
+        }
+
+        // Form Submission handling (Generating clipboard data)
+        function handleFormSubmission(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('form-name').value;
+            const phone = document.getElementById('form-phone').value;
+            const service = document.getElementById('form-service').value;
+            const prepStatus = document.getElementById('form-prep-status').value || "No prep assessment conducted";
+            const message = document.getElementById('form-message').value || "No custom query notes";
+
+            const summaryText = `--- INQUIRY SUMMARY ---\nClient Name: ${name}\nPhone: ${phone}\nRequested Service: ${service}\nDocument Prep Status: ${prepStatus}\nMessage: ${message}`;
+
+            // Secure custom Clipboard copying mechanism
+            const el = document.createElement('textarea');
+            el.value = summaryText;
+            document.body.appendChild(el);
+            el.select();
+            document.execCommand('copy');
+            document.body.removeChild(el);
+
+            // Pop up the custom toast notification
+            const toast = document.getElementById('form-toast');
+            if (toast) {
+                toast.classList.remove('hidden');
+            }
+        }
+
+        function dismissFormToast() {
+            document.getElementById('form-toast').classList.add('hidden');
+            document.getElementById('consultationForm').reset();
+        }
+
+        // Generate customized WhatsApp Redirect strings
+        function generateWhatsAppMessage() {
+            const name = document.getElementById('form-name').value || "Guest";
+            const service = document.getElementById('form-service').value || "General Consultation";
+            const prepStatus = document.getElementById('form-prep-status').value || "No items ticked";
+            const message = document.getElementById('form-message').value || "Hello, I am looking for expert compliance help.";
+
+            const encodedMessage = encodeURIComponent(
+                `Hello Shamuvel Jog,\nMy Name is ${name}.\nI would like to consult on: *${service}*\nPrep Status: ${prepStatus}\nDetails: ${message}`
+            );
+
+            // Opens standard international formatted WhatsApp URL API
+            window.open(`https://wa.me/919999999999?text=${encodedMessage}`, '_blank');
+        }
+
+        function trackChatStart() {
+            // Track when user clicks floating whatsapp direct chat button
+            console.log("WhatsApp consult triggered.");
+        }
+    </script>
+</body>
+</html>
