@@ -4,6 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Shamuvel Jog | Online Services</title>
 
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -18,80 +19,75 @@
 }
 
 body{
-    background:#f5f7fb;
+    background:#f4f7fc;
     color:#222;
 }
 
 /* HEADER */
 
 header{
-    background:#002b7f;
-    color:#fff;
-    padding:20px 8%;
+    background:#001f5c;
+    padding:18px 8%;
     display:flex;
     justify-content:space-between;
     align-items:center;
+    color:#fff;
     position:sticky;
     top:0;
-    z-index:1000;
+    z-index:999;
 }
 
 .logo{
-    font-size:32px;
+    font-size:30px;
     font-weight:700;
 }
 
 .logo span{
-    color:#fdb913;
+    color:#ffbf00;
 }
 
 nav a{
     color:#fff;
     text-decoration:none;
     margin-left:25px;
-    font-weight:500;
     transition:0.3s;
+    font-weight:500;
 }
 
 nav a:hover{
-    color:#fdb913;
+    color:#ffbf00;
 }
 
 /* HERO SECTION */
 
 .hero{
-    min-height:90vh;
-    display:flex;
+    padding:70px 8%;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:60px;
     align-items:center;
-    justify-content:space-between;
-    padding:60px 8%;
-    background:linear-gradient(to right,#ffffff,#eef3ff);
-    gap:50px;
-}
-
-.hero-text{
-    flex:1;
+    background:linear-gradient(to right,#ffffff,#eef4ff);
 }
 
 .hero-text h1{
-    font-size:60px;
-    color:#002b7f;
+    font-size:58px;
     line-height:1.1;
+    color:#001f5c;
     margin-bottom:20px;
 }
 
 .hero-text h1 span{
-    color:#fdb913;
+    color:#ffbf00;
 }
 
 .hero-text p{
     font-size:18px;
-    margin-bottom:30px;
+    line-height:1.8;
     color:#555;
-    line-height:1.7;
+    margin-bottom:30px;
 }
 
-.hero-btns{
+.hero-buttons{
     display:flex;
     gap:20px;
     flex-wrap:wrap;
@@ -99,43 +95,42 @@ nav a:hover{
 
 .btn{
     padding:15px 30px;
-    border-radius:8px;
+    border-radius:10px;
     text-decoration:none;
     font-weight:600;
     transition:0.3s;
 }
 
-.btn-primary{
-    background:#002b7f;
+.primary-btn{
+    background:#001f5c;
     color:#fff;
 }
 
-.btn-primary:hover{
-    background:#001b52;
+.primary-btn:hover{
+    background:#000f33;
 }
 
-.btn-secondary{
+.whatsapp-btn{
     background:#25D366;
     color:#fff;
 }
 
-.btn-secondary:hover{
-    background:#1da851;
-}
-
-.hero-image{
-    flex:1;
-    text-align:center;
+.whatsapp-btn:hover{
+    background:#1ca851;
 }
 
 .hero-image img{
     width:100%;
-    max-width:550px;
-    border-radius:20px;
-    box-shadow:0 10px 30px rgba(0,0,0,0.15);
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.15);
 }
 
 /* SERVICES */
+
+.services{
+    padding:90px 8%;
+    background:#fff;
+}
 
 .section-title{
     text-align:center;
@@ -144,49 +139,116 @@ nav a:hover{
 
 .section-title h2{
     font-size:42px;
-    color:#002b7f;
-}
-
-.services{
-    padding:80px 8%;
-    background:#fff;
+    color:#001f5c;
 }
 
 .services-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
     gap:25px;
 }
 
 .service-card{
-    background:#f7f9ff;
-    padding:35px 25px;
-    border-radius:15px;
+    background:#f7faff;
+    border-radius:18px;
+    padding:30px;
     transition:0.3s;
-    border:1px solid #e2e7ff;
+    border:2px solid transparent;
+    cursor:pointer;
 }
 
 .service-card:hover{
     transform:translateY(-8px);
-    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+    border-color:#001f5c;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.service-card input{
+    margin-right:10px;
+    transform:scale(1.3);
 }
 
 .service-card h3{
-    color:#002b7f;
-    margin-bottom:15px;
-    font-size:22px;
+    color:#001f5c;
+    margin:15px 0;
 }
 
 .service-card p{
     color:#666;
-    line-height:1.6;
+    line-height:1.7;
 }
 
-/* WHY CHOOSE US */
+/* FORM */
+
+.enquiry{
+    padding:90px 8%;
+    background:#eef4ff;
+}
+
+.form-container{
+    max-width:800px;
+    margin:auto;
+    background:#fff;
+    padding:45px;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+.form-container h2{
+    text-align:center;
+    color:#001f5c;
+    margin-bottom:35px;
+    font-size:40px;
+}
+
+.form-group{
+    margin-bottom:20px;
+}
+
+.form-group label{
+    display:block;
+    margin-bottom:10px;
+    font-weight:600;
+    color:#001f5c;
+}
+
+.form-group input,
+.form-group textarea{
+    width:100%;
+    padding:15px;
+    border-radius:10px;
+    border:1px solid #ccc;
+    font-size:16px;
+}
+
+.form-group textarea{
+    height:120px;
+    resize:none;
+}
+
+.submit-btn{
+    width:100%;
+    padding:18px;
+    border:none;
+    border-radius:12px;
+    background:#25D366;
+    color:#fff;
+    font-size:18px;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.submit-btn:hover{
+    background:#1ca851;
+}
+
+/* WHY */
 
 .why{
-    padding:80px 8%;
-    background:#eef3ff;
+    padding:90px 8%;
+    background:#001f5c;
+    color:#fff;
 }
 
 .why-grid{
@@ -196,104 +258,24 @@ nav a:hover{
 }
 
 .why-box{
-    background:#fff;
+    background:rgba(255,255,255,0.08);
     padding:30px;
-    border-radius:15px;
+    border-radius:18px;
     text-align:center;
-    box-shadow:0 5px 15px rgba(0,0,0,0.05);
 }
 
 .why-box h3{
-    color:#002b7f;
-    margin:15px 0;
-}
-
-/* CONTACT */
-
-.contact{
-    padding:80px 8%;
-    background:#002b7f;
-    color:#fff;
-}
-
-.contact-wrapper{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
-    gap:40px;
-}
-
-.contact-info h2{
-    font-size:42px;
-    margin-bottom:20px;
-}
-
-.contact-info p{
     margin-bottom:15px;
-    line-height:1.8;
-}
-
-.contact-form{
-    background:#fff;
-    padding:35px;
-    border-radius:15px;
-}
-
-.contact-form input,
-.contact-form textarea{
-    width:100%;
-    padding:15px;
-    margin-bottom:20px;
-    border:1px solid #ccc;
-    border-radius:8px;
-    font-size:16px;
-}
-
-.contact-form textarea{
-    height:120px;
-    resize:none;
-}
-
-.contact-form button{
-    background:#fdb913;
-    color:#002b7f;
-    border:none;
-    padding:15px 30px;
-    border-radius:8px;
-    font-weight:700;
-    cursor:pointer;
-    transition:0.3s;
-}
-
-.contact-form button:hover{
-    background:#ffca42;
+    color:#ffbf00;
 }
 
 /* FOOTER */
 
 footer{
-    background:#001b52;
+    background:#000d2e;
     color:#fff;
     text-align:center;
     padding:25px;
-}
-
-/* WHATSAPP FLOAT */
-
-.whatsapp{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    color:#fff;
-    width:65px;
-    height:65px;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    border-radius:50%;
-    font-size:30px;
-    text-decoration:none;
-    box-shadow:0 10px 20px rgba(0,0,0,0.2);
 }
 
 /* RESPONSIVE */
@@ -301,7 +283,7 @@ footer{
 @media(max-width:992px){
 
 .hero{
-    flex-direction:column;
+    grid-template-columns:1fr;
     text-align:center;
 }
 
@@ -309,7 +291,7 @@ footer{
     font-size:42px;
 }
 
-.hero-btns{
+.hero-buttons{
     justify-content:center;
 }
 
@@ -322,6 +304,10 @@ header{
     gap:15px;
 }
 
+nav{
+    text-align:center;
+}
+
 nav a{
     margin:0 10px;
 }
@@ -330,12 +316,13 @@ nav a{
     font-size:34px;
 }
 
-.section-title h2{
+.section-title h2,
+.form-container h2{
     font-size:32px;
 }
 
-.contact-info h2{
-    font-size:32px;
+.form-container{
+    padding:25px;
 }
 
 }
@@ -348,38 +335,48 @@ nav a{
 <!-- HEADER -->
 
 <header>
-    <div class="logo">Shamuvel <span>Jog</span></div>
+
+    <div class="logo">
+        Shamuvel <span>Jog</span>
+    </div>
 
     <nav>
         <a href="#">Home</a>
         <a href="#services">Services</a>
-        <a href="#why">Why Us</a>
+        <a href="#enquiry">Enquiry</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
-<!-- HERO SECTION -->
+<!-- HERO -->
 
 <section class="hero">
 
     <div class="hero-text">
-        <h1>One Stop Solution For All Your <span>Important Services</span></h1>
+
+        <h1>
+            Professional <span>Online Services</span> For Everyone
+        </h1>
 
         <p>
-            Fast, reliable and hassle-free online services including MNC Registration,
-            Passport Work, PF Services, College Admissions, Travel Booking,
-            Income Tax Filing and more.
+            Simplifying registrations, admissions, passport services,
+            travel booking, taxation, and documentation work with
+            fast and trusted support.
         </p>
 
-        <div class="hero-btns">
-            <a href="tel:7972139519" class="btn btn-primary">
+        <div class="hero-buttons">
+
+            <a href="tel:7972139519" class="btn primary-btn">
                 Call Now
             </a>
 
-            <a href="https://wa.me/917972139519" class="btn btn-secondary">
+            <a href="https://wa.me/917972139519" class="btn whatsapp-btn">
                 WhatsApp
             </a>
+
         </div>
+
     </div>
 
     <div class="hero-image">
@@ -393,50 +390,114 @@ nav a{
 <section class="services" id="services">
 
     <div class="section-title">
-        <h2>Services We Provide</h2>
+        <h2>Select Your Service</h2>
     </div>
 
     <div class="services-grid">
 
         <div class="service-card">
-            <h3>MNC Registration</h3>
-            <p>Complete registration assistance for Multi-National Companies.</p>
+            <label>
+                <input type="checkbox" value="MNC Registration" class="service">
+                <h3>MNC Registration</h3>
+                <p>Registration assistance for multi-national companies.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>College Admissions</h3>
-            <p>Admission guidance and complete support for students.</p>
+            <label>
+                <input type="checkbox" value="College Admissions" class="service">
+                <h3>College Admissions</h3>
+                <p>Admission guidance and complete support for students.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>Travel Booking</h3>
-            <p>Flight, train, bus and hotel booking services.</p>
+            <label>
+                <input type="checkbox" value="Travel Booking" class="service">
+                <h3>Travel Booking</h3>
+                <p>Flight, train, bus and hotel booking support.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>PF Work</h3>
-            <p>Easy and efficient PF services and claim support.</p>
+            <label>
+                <input type="checkbox" value="PF Work" class="service">
+                <h3>PF Work</h3>
+                <p>Professional PF claim and account assistance.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>Passport Work</h3>
-            <p>New passport, renewal, tatkal and document assistance.</p>
+            <label>
+                <input type="checkbox" value="Passport Work" class="service">
+                <h3>Passport Work</h3>
+                <p>New passport, renewal and tatkal services.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>Bombay Nursing Registration</h3>
-            <p>New registration, renewal and qualification support.</p>
+            <label>
+                <input type="checkbox" value="Bombay Nursing Registration" class="service">
+                <h3>Bombay Nursing Registration</h3>
+                <p>New registration and renewal support.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>PCPNDT Registration</h3>
-            <p>Registration support for clinics, hospitals and laboratories.</p>
+            <label>
+                <input type="checkbox" value="PCPNDT Registration" class="service">
+                <h3>PCPNDT Registration</h3>
+                <p>Registration for clinics and hospitals.</p>
+            </label>
         </div>
 
         <div class="service-card">
-            <h3>Income Tax Return Filing</h3>
-            <p>Accurate and timely ITR filing for individuals and businesses.</p>
+            <label>
+                <input type="checkbox" value="Income Tax Return Filing" class="service">
+                <h3>Income Tax Return Filing</h3>
+                <p>Accurate and timely ITR filing services.</p>
+            </label>
         </div>
+
+    </div>
+
+</section>
+
+<!-- ENQUIRY FORM -->
+
+<section class="enquiry" id="enquiry">
+
+    <div class="form-container">
+
+        <h2>Submit Your Enquiry</h2>
+
+        <form id="whatsappForm">
+
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Mobile Number</label>
+                <input type="tel" id="mobile" required>
+            </div>
+
+            <div class="form-group">
+                <label>Your City</label>
+                <input type="text" id="city">
+            </div>
+
+            <div class="form-group">
+                <label>Additional Message</label>
+                <textarea id="message"></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">
+                Submit on WhatsApp
+            </button>
+
+        </form>
 
     </div>
 
@@ -444,75 +505,32 @@ nav a{
 
 <!-- WHY CHOOSE US -->
 
-<section class="why" id="why">
+<section class="why">
 
     <div class="section-title">
-        <h2>Why Choose Us?</h2>
+        <h2 style="color:white;">Why Choose Us?</h2>
     </div>
 
     <div class="why-grid">
 
         <div class="why-box">
             <h3>Fast Service</h3>
-            <p>Quick processing and timely completion of your work.</p>
-        </div>
-
-        <div class="why-box">
-            <h3>Reliable Support</h3>
-            <p>Professional guidance throughout the process.</p>
+            <p>Quick and reliable processing.</p>
         </div>
 
         <div class="why-box">
             <h3>Secure Process</h3>
-            <p>Your information remains fully confidential and secure.</p>
+            <p>Your information stays confidential.</p>
         </div>
 
         <div class="why-box">
-            <h3>Customer Satisfaction</h3>
-            <p>Trusted by clients for transparent and hassle-free services.</p>
+            <h3>Trusted Support</h3>
+            <p>Professional guidance for every step.</p>
         </div>
 
-    </div>
-
-</section>
-
-<!-- CONTACT -->
-
-<section class="contact" id="contact">
-
-    <div class="contact-wrapper">
-
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-
-            <p><strong>Phone:</strong> 7972139519</p>
-
-            <p><strong>WhatsApp:</strong> 7972139519</p>
-
-            <p>
-                We handle your important registrations and online services
-                professionally and efficiently.
-            </p>
-        </div>
-
-        <div class="contact-form">
-
-            <form>
-
-                <input type="text" placeholder="Your Name" required>
-
-                <input type="email" placeholder="Your Email">
-
-                <input type="tel" placeholder="Your Phone Number" required>
-
-                <textarea placeholder="Your Message"></textarea>
-
-                <button type="submit">
-                    Send Inquiry
-                </button>
-
-            </form>
-
+        <div class="why-box">
+            <h3>100% Satisfaction</h3>
+            <p>Dedicated customer assistance.</p>
         </div>
 
     </div>
@@ -521,15 +539,60 @@ nav a{
 
 <!-- FOOTER -->
 
-<footer>
+<footer id="contact">
+
+    <h2>Contact Us</h2>
+
+    <p>Phone: 7972139519</p>
+
+    <p>WhatsApp: 7972139519</p>
+
+    <br>
+
     <p>© 2026 Shamuvel Jog | All Rights Reserved</p>
+
 </footer>
 
-<!-- WHATSAPP FLOAT -->
+<!-- JAVASCRIPT -->
 
-<a href="https://wa.me/917972139519" class="whatsapp">
-    ☎
-</a>
+<script>
+
+document.getElementById("whatsappForm").addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let selectedServices = [];
+
+    document.querySelectorAll(".service:checked").forEach((service)=>{
+        selectedServices.push(service.value);
+    });
+
+    let name = document.getElementById("name").value;
+    let mobile = document.getElementById("mobile").value;
+    let city = document.getElementById("city").value;
+    let message = document.getElementById("message").value;
+
+    let finalMessage =
+`New Enquiry Received
+
+Name: ${name}
+Mobile: ${mobile}
+City: ${city}
+
+Selected Services:
+${selectedServices.join(", ")}
+
+Message:
+${message}`;
+
+    let whatsappURL =
+`https://wa.me/917972139519?text=${encodeURIComponent(finalMessage)}`;
+
+    window.open(whatsappURL, "_blank");
+
+});
+
+</script>
 
 </body>
 </html>
